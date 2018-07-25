@@ -1,0 +1,14 @@
+{
+  "development": {
+      "token": "",
+      "polling": true
+  },
+  "test": {
+    "token": "",
+    "polling": true
+  },
+  "production": {
+    "token": "",
+    "polling": true
+  }
+}
