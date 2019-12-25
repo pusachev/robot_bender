@@ -13,10 +13,10 @@
   "author": "Pavel Usachev",
   "license": "MIT",
   "dependencies": {
-    "moment": "^2.22.2",
-    "mysql2": "^1.5.3",
-    "node-telegram-bot-api": "^0.30.0",
-    "sequelize": "^4.38.0",
-    "sequelize-cli": "^4.0.0"
+    "moment": "*",
+    "mysql2": "*",
+    "node-telegram-bot-api": "*",
+    "sequelize": "*",
+    "sequelize-cli": "*"
   }
 }
