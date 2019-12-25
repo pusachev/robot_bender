@@ -21,7 +21,8 @@ bot.on('webhook_error', (error) => {
 });
 
 bot.on('sticker', function(msg){
-    bot.sendMessage(msg.from.id, 'Сам такой!', {'reply_to_message_id': msg.message_id, 'from': msg.from});
+    console.log(msg);
+    bot.sendMessage(msg.chat.id, 'Сам такой!', {'reply_to_message_id': msg.message_id, 'from': msg.from});
 });
 
 fs
