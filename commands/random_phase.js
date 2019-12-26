@@ -4,7 +4,7 @@ const db = require('../models');
 
 module.exports = function (bot) {
 
-    bot.onText(/[?]/, (msg) => {
+    bot.onText(/Бендер (.*)/, (msg) => {
 
         const Phases = db.Phases;
 

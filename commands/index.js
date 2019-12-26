@@ -25,6 +25,16 @@ bot.on('sticker', function(msg){
     bot.sendMessage(msg.chat.id, 'Сам такой!', {'reply_to_message_id': msg.message_id, 'from': msg.from});
 });
 
+bot.on('message', msg => {
+    console.log(msg);
+
+    if (msg.from.username == 'asm3r') {
+        setTimeout(function(){
+            bot.sendMessage(msg.chat.id, "Ебать мой лысый череп, Ваня пришел!");
+        }, 5000);
+    }
+});
+
 fs
     .readdirSync(__dirname)
     .filter(file => {

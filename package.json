@@ -10,6 +10,9 @@
     "telegram",
     "bot"
   ],
+  "scripts": {
+    "start": "node start.js"
+  },
   "author": "Pavel Usachev",
   "license": "MIT",
   "dependencies": {
