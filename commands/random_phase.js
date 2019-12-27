@@ -2,10 +2,11 @@
 
 const db = require('../models');
 
-module.exports = function (bot) {
+module.exports = function (bot, logger) {
 
-    bot.onText(/Бендер (.*)/, (msg) => {
-
+    bot.onText(/Бендер (.*)/, (msg, match) => {
+        logger.log("info", match[1]);
+        logger.log("debug", msg);
         const Phases = db.Phases;
 
         Phases.findAll().then(phases => {

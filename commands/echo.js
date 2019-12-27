@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function (bot) {
+module.exports = function (bot, logger) {
     bot.onText(/\/echo (.+)/, (msg, match) => {
         // 'msg' is the received Message from Telegram
         // 'match' is the result of executing the regexp above on the text content

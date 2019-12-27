@@ -6,34 +6,12 @@ const TelegramBot   = require('node-telegram-bot-api');
 const basename      = path.basename(__filename);
 const env           = process.env.NODE_ENV || 'development';
 const config        = require(__dirname + '/../config/bot_config.json')[env];
+const winston       = require('winston');
 var  bot            = {};
-
 
 bot = new TelegramBot(config.token, {'polling': config.polling || false});
 
-bot.on('polling_error', (error) => {
-    console.log(error.code);  // => 'EFATAL'
-});
 
-
-bot.on('webhook_error', (error) => {
-    console.log(error.code);  // => 'EPARSE'
-});
-
-bot.on('sticker', function(msg){
-    console.log(msg);
-    bot.sendMessage(msg.chat.id, 'Сам такой!', {'reply_to_message_id': msg.message_id, 'from': msg.from});
-});
-
-bot.on('message', msg => {
-    console.log(msg);
-
-    if (msg.from.username == 'asm3r') {
-        setTimeout(function(){
-            bot.sendMessage(msg.chat.id, "Ебать мой лысый череп, Ваня пришел!");
-        }, 5000);
-    }
-});
 
 fs
     .readdirSync(__dirname)
@@ -41,7 +19,7 @@ fs
         return (file.indexOf('.') !== 0) && (file !== basename) && (file.slice(-3) === '.js');
     })
     .forEach(file => {
-         require(path.join(__dirname, file))(bot);
+         require(path.join(__dirname, file))(bot, winston);
     });
 
 

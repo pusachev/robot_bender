@@ -4,9 +4,10 @@ const fs            = require('fs');
 const path          = require('path');
 const basename      = path.basename(__filename);
 
-module.exports = function (bot) {
+module.exports = function (bot, logger) {
 
     bot.onText(/картинка/, (msg) => {
+        logger.log("debug", msg);
         let pictures = [];
 
         let files =  fs

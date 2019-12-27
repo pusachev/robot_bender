@@ -1,9 +1,9 @@
 'use strict';
 
-module.exports = function (bot) {
+module.exports = function (bot, logger) {
     bot.onText(/что такое (.+)/, (msg, match) => {
-
-        console.log(match);
+        logger.log("info", match[1]);
+        logger.log("debug", msg);
 
         const resp = match[1];
 

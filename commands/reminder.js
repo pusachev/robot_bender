@@ -3,9 +3,10 @@
 const db = require('../models');
 const moment = require('moment');
 
-module.exports = function (bot) {
+module.exports = function (bot, logger) {
 
     bot.onText(/напомни (.+) в (.+)/, (msg, match) => {
+        logger.log("debug", msg);
 
         const Reminder = db.Reminder;
 
