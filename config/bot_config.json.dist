@@ -4,7 +4,7 @@
       "polling": true
   },
   "test": {
-    "token": "addnewtoken",
+    "token": "addtocken",
     "polling": true
   },
   "production": {
