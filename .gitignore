@@ -117,3 +117,4 @@ typings/
 
 config/*.json
 test
+*.sh
