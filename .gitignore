@@ -116,3 +116,4 @@ typings/
 .next
 
 config/*.json
+test
