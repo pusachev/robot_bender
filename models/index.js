@@ -34,3 +34,7 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+for (var i=0; i<10; i++){
+  console.log(i);
+}
