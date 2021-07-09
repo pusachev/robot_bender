@@ -23,7 +23,7 @@ module.exports = function (bot, logger) {
             let name = msg.from.first_name ? msg.from.first_name : '@' + msg.from.username;
             messages[msg.from.username][msg.chat.id][utc] = true;
             setTimeout(function(){
-                bot.sendMessage(msg.chat.id, "Поцелуй мой блестящий металический зад " + name);
+                bot.sendMessage(msg.chat.id, "Поцелуй мой сверкающий металический зад " + name);
             }, 10000);
         }
 
