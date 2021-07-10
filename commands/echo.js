@@ -8,6 +8,7 @@ module.exports = function (bot, logger) {
 
         const chatId = msg.chat.id;
         const resp = match[1]; // the captured "whatever"
+        const chat = log.chat.id;
 
         // send back the matched "whatever" to the chat
         bot.sendMessage(chatId, resp, {

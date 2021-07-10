@@ -67,10 +67,9 @@ node_modules/.bin/sequelize db:migrate
 
 [How do I Create a bot?](https://core.telegram.org/bots)
 
-5. For run bot 
+5. For go bot 
 
 ```bash
 node start.js
 ```
-Hello 
-dddd
+Hello world
