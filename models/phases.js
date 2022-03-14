@@ -1,7 +1,7 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var Phases = sequelize.define('Phases', {
-    phase: DataTypes.STRING,
+    phase: DataTypes.TEXT,
     count: DataTypes.INTEGER,
     rating: DataTypes.FLOAT
   }, {});

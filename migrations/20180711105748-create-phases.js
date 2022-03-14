@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       phase: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       count: {
         type: Sequelize.INTEGER
