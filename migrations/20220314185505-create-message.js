@@ -9,10 +9,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       message_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BIGINT
       },
       user_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BIGINT
       },
       first_name : {
         type: Sequelize.STRING
@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       chat_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.BIGINT
       },
       chat_title : {
         type: Sequelize.STRING

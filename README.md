@@ -44,6 +44,7 @@ npm install
 
 ```bash
 node_modules/.bin/sequelize db:migrate
+node_modules/.bin/sequelize db:seed:all
 ```
 
 6. Config bot like this
@@ -72,5 +73,7 @@ node_modules/.bin/sequelize db:migrate
 ```bash
 node start.js
 ```
-Hello 
-dddd
+
+### UPD
+
+Some function like reminder was comment. 

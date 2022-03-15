@@ -22,9 +22,6 @@ module.exports = function (bot, logger) {
         if (messages[msg.from.username][msg.chat.id][utc] === undefined) {
             let name = msg.from.first_name ? msg.from.first_name : '@' + msg.from.username;
             messages[msg.from.username][msg.chat.id][utc] = true;
-            setTimeout(function(){
-                bot.sendMessage(msg.chat.id, "Поцелуй мой блестящий металический зад " + name);
-            }, 10000);
         }
 
         const Messages = db.Messages;

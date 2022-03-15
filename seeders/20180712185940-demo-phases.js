@@ -7,6 +7,8 @@ module.exports = {
       let data = [];
 
       for (let index in collection) {
+        collection[index].createdAt = new Date();
+        collection[index].updatedAt = new Date();
         data.push(collection[index]);
       }
 
